@@ -1,3 +1,4 @@
+//in this we create a mithh
 mithh = {
   name: "Mitesh",
   favNum: 7,
