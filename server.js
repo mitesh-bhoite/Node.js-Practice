@@ -1,3 +1,4 @@
+//it is for server module
 const http = require("http");
 
 const server = http.createServer((req, res) => {
