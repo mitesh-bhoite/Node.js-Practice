@@ -1,4 +1,4 @@
-//📌 A simple REST API
+//A simple REST API
 const express = require("express");
 const app = express();
 
