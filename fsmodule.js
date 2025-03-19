@@ -10,3 +10,4 @@ console.log(a.toString());
 fs.writeFile("file.txt", "Front-end developer", () => {
   console.log("Written to the file");
 });
+//fie system model
