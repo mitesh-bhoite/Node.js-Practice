@@ -8,3 +8,10 @@ let users = [{ id: 1, name: "Mitesh" }];
 app.get("/users", (req, res) => {
   res.json(users);
 });
+
+// POST new user
+app.post("/users", (req, res) => {
+  const user = { id: users.length + 1, name: req.body.name };
+  users.push(user);
+  res.json(user);
+});
