@@ -15,3 +15,11 @@ app.post("/users", (req, res) => {
   users.push(user);
   res.json(user);
 });
+
+// DELETE user by ID
+app.delete("/users/:id", (req, res) => {
+  users = users.filter((u) => u.id != req.params.id);
+  res.json({ message: "User deleted" });
+});
+
+app.listen(3000, () => console.log("Server running on port 3000"));
