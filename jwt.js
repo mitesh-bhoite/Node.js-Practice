@@ -24,3 +24,5 @@ app.post("/login", async (req, res) => {
   });
   res.json({ token });
 });
+
+app.listen(3000, () => console.log("Auth server running on port 3000"));
