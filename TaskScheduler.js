@@ -1,4 +1,4 @@
-// this for task scheduler
+// this for task schedule
 const cron = require("node-cron");
 
 cron.schedule("* * * * *", () => {
