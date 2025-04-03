@@ -12,3 +12,9 @@ app.post("/shorten", (req, res) => {
   urls[shortUrl] = longUrl;
   res.json({ shortUrl: `http://localhost:3000/${shortUrl}` });
 });
+
+app.get("/:shortUrl", (req, res) => {
+  const longUrl = urls[req.params.shortUrl];
+  if (longUrl) res.redirect(longUrl);
+  else res.status(404).send("URL not found");
+});
