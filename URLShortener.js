@@ -18,3 +18,5 @@ app.get("/:shortUrl", (req, res) => {
   if (longUrl) res.redirect(longUrl);
   else res.status(404).send("URL not found");
 });
+
+app.listen(3000, () => console.log("URL Shortener running on port 3000"));
