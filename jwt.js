@@ -16,7 +16,7 @@ app.post("/register", async (req, res) => {
 
 app.post("/login", async (req, res) => {
   const user = users.find((u) => u.username === req.body.username);
-  if (!user || !(await bcrypt.compare(req.bdy.password, user.password))) {
+  if (!user || !(await bcrypt.compare(req.body.password, user.password))) {
     return res.status(400).json({ error: "Invalid credentials" });
   }
   const token = jwt.sign({ username: user.username }, SECRET_KEY, {
