@@ -6,7 +6,7 @@ app.use(express.json());
 
 const urls = {};
 
-app.post("shorten", (req, res) => {
+app.post("/shorten", (req, res) => {
   const { longUrl } = req.body;
   const shortUrl = shortid.generate();
   urls[shortUrl] = longUrl;
