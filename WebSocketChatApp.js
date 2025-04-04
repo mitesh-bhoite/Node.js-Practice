@@ -8,7 +8,7 @@ const io = new Server(server);
 io.on("connection", (socket) => {
   console.log("A user connected");
   socket.on("message", (msg) => {
-    io.emit("message", mg);
+    io.emit("message", msg);
   });
   socket.on("disconnect", () => console.log("User disconnected"));
 });
