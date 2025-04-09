@@ -1,4 +1,4 @@
-//PDF Generator
+//PDF mGenerator
 const pdf = require("pdfkit");
 const fs = require("fs");
 
