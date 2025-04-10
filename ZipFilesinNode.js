@@ -4,3 +4,7 @@ const archiver = require("archiver");
 
 const output = fs.createWriteStream("archive.zip");
 const archive = archiver("zip");
+
+archive.pipe(output);
+archive.append(fs.createReadStream("file.txt"), { name: "file.txt" });
+archive.finalize();
