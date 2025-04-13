@@ -1,4 +1,4 @@
-//Markdown to HTML Converter
+//Markdon to HTML Converter
 const fs = require("fs");
 const marked = require("marked");
 
