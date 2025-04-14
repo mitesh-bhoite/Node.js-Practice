@@ -1,4 +1,4 @@
-//Fake ata Generator
+//Fake Data Generator
 const faker = require("faker");
 
 for (let i = 0; i < 5; i++) {
