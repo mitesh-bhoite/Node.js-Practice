@@ -15,4 +15,5 @@ axios
       headers: { Authorization: `Bearer ${API_KEY}` },
     }
   )
-  .then((response) => console.log(response.data.choices[0].text.trim()));
+  .then((response) => console.log(response.data.choices[0].text.trim()))
+  .catch((error) => console.error(error));
