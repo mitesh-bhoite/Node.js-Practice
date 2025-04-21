@@ -6,10 +6,12 @@ const prompt = "What is Node.js?";
 axios
   .post(
     "https://api.openai.com/v1/completions",
-    {},
     {
-      headers: { Authorization: `Bearer ${API_KEY}` },
-    }
+      model: "text-davinci-003",
+      prompt,
+      max_tokens: 100,
+    },
+    {}
   )
   .then((response) => console.log(response.data.choices[0].text.trim()))
   .catch((error) => console.error(error));
