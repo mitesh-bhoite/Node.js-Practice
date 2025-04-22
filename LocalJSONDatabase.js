@@ -6,3 +6,4 @@ const users = [
   { id: 2, name: "John", age: 25 },
 ];
 fs.writeFileSync("users.json", JSON.stringify(users, null, 2));
+const data = JSON.parse(fs.readFileSync("users.json", "utf8"));
