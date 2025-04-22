@@ -5,3 +5,4 @@ const users = [
   { id: 1, name: "Mitesh", age: 21 },
   { id: 2, name: "John", age: 25 },
 ];
+fs.writeFileSync("users.json", JSON.stringify(users, null, 2));
