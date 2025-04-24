@@ -4,10 +4,9 @@ const yargs = require("yargs");
 
 yargs
   .command({
-    builder: {
-      title: { type: "string", demandOption: true },
-      body: { type: "string", demandOption: true },
-    },
+    command: "add",
+    describe: "Add a new note",
+    builder: {},
     handler(argv) {
       const note = { title: argv.title, body: argv.body };
       const notes = JSON.parse(fs.readFileSync("notes.json") || "[]");
