@@ -5,5 +5,5 @@ sharp("input.jpg")
   .resize(300, 300)
   .toFile("resized.jpg", (err, info) => {
     if (err) console.error(err);
-    else console.log("Image resized!");
+    else console.log("Image iresized!");
   });
