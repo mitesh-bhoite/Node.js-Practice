@@ -1,4 +1,4 @@
-//Image Resize Tool
+//Image Resize Tool .
 const sharp = require("sharp");
 
 sharp("input.jpg")
