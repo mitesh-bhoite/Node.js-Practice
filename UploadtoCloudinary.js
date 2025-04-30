@@ -6,6 +6,7 @@ cloudinary.config({
   api_key: "your_key",
   api_secret: "your_secret",
 });
+
 cloudinary.uploader.upload("image.jpg", (err, result) => {
   if (err) return console.error(err);
   console.log(result.secure_url);
