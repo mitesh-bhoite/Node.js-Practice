@@ -8,3 +8,6 @@ function addTask(task) {
   fs.writeFileSync("todos.json", JSON.stringify(todos));
   console.log("Task added!");
 }
+function listTasks() {
+  todos.forEach((t, i) => console.log(`${i + 1}. ${t}`));
+}
