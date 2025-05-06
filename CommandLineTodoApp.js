@@ -14,3 +14,4 @@ function listTasks() {
 const cmd = process.argv[2];
 const input = process.argv.slice(3).join(" ");
 if (cmd === "add") addTask(input);
+if (cmd === "list") listTasks();
