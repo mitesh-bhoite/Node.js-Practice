@@ -12,3 +12,4 @@ function listTasks() {
   todos.forEach((t, i) => console.log(`${i + 1}. ${t}`));
 }
 const cmd = process.argv[2];
+const input = process.argv.slice(3).join(" ");
