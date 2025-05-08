@@ -4,7 +4,7 @@ let counter = seconds;
 const interval = setInterval(() => {
   console.log(counter--);
   if (counter < 0) {
-    console.log("Time’s up!");
+    console.log("Time's up!");
     clearInterval(interval);
   }
 });
