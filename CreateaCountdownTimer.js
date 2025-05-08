@@ -7,4 +7,4 @@ const interval = setInterval(() => {
     console.log("Time's up!");
     clearInterval(interval);
   }
-});
+}, 1000);
