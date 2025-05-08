@@ -3,4 +3,6 @@ const seconds = 10;
 let counter = seconds;
 const interval = setInterval(() => {
   console.log(counter--);
+  if (counter < 0) {
+  }
 });
