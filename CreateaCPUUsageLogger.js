@@ -1,3 +1,5 @@
 // Create a CPU Usage Logger
 const os = require("os");
-setInterval(() => {});
+setInterval(() => {
+  const usage = os.loadavg();
+});
