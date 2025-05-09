@@ -1,1 +1,1 @@
-//Create a CPU Usage Logger
+// Create a CPU Usage Logger
