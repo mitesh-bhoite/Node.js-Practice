@@ -2,5 +2,7 @@
 const net = require("net");
 const server = net.createServer((socket) => {
   socket.write("Welcome to CLI Chat!\n");
-  socket.on("data", (data) => {});
+  socket.on("data", (data) => {
+    console.log("Client:", data.toString());
+  });
 });
