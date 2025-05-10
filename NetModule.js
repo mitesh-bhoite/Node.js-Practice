@@ -6,3 +6,4 @@ const server = net.createServer((socket) => {
     console.log("Client:", data.toString());
   });
 });
+server.listen(5000, () => console.log("Chat server on port 5000"));
