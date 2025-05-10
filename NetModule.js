@@ -1,1 +1,1 @@
-//Build a Local Chat CLI
+//Build a Local Chat CLI App
