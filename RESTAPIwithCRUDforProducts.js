@@ -7,4 +7,5 @@ app.get("/products", (req, res) => res.json(products));
 app.post("/products", (req, res) => {
   const product = { id: Date.now(), ...req.body };
   products.push(product);
+  res.status(201).json(product);
 });
