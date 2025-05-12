@@ -4,4 +4,6 @@ const app = express();
 app.use(express.json());
 let products = [];
 app.get("/products", (req, res) => res.json(products));
-app.post("/products", (req, res) => {});
+app.post("/products", (req, res) => {
+  const product = { id: Date.now(), ...req.body };
+});
