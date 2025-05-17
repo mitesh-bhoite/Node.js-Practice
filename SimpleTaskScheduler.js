@@ -1,2 +1,2 @@
 // simple task scheduler
-setTimeout(() => console.log);
+setTimeout(() => console.log(""));
