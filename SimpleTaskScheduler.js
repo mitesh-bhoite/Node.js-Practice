@@ -1,3 +1,3 @@
 // simple task scheduler
 setTimeout(() => console.log("1 second passed"), 1000);
-setInterval(() => console.log("Repeating every 3s"));
+setInterval(() => console.log("Repeating every 3s"), 3000);
