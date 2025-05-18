@@ -7,3 +7,4 @@ const data = [
 ];
 const parser = new Parser();
 const csv = parser.parse(data);
+fs.writeFileSync("data.csv", csv);
