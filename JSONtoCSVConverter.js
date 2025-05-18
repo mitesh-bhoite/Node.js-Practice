@@ -6,3 +6,4 @@ const data = [
   { name: "Alice", age: 22 },
 ];
 const parser = new Parser();
+const csv = parser.parse(data);
