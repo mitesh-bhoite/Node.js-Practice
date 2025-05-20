@@ -1,1 +1,1 @@
-//CPU Temperature &
+//CPU Temperature & Memory Monitor (Linux only)
