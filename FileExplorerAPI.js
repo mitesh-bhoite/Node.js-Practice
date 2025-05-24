@@ -9,5 +9,6 @@ app.get("/files", (req, res) => {
 });
 app.get("/files/:filename", (req, res) => {
   const filePath = path.join(__dirname, req.params.filename);
+  fs.readFile(filePath, "utf8", (err, data));
 });
 app.listen(3000);
