@@ -11,3 +11,4 @@ app.put("/tasks/:id", async (req, res) => {
   await Task.findByIdAndUpdate(req.params.id, req.body);
   res.send("Updated!");
 });
+app.delete("/tasks/:id", async(req, res));
