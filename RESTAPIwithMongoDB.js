@@ -9,4 +9,5 @@ app.get("/tasks", async (req, res) => res.json(await Task.find()));
 app.post("/tasks", async (req, res) => res.json(await Task.create(req.body)));
 app.put("/tasks/:id", async (req, res) => {
   await Task.findByIdAndUpdate(req.params.id, req.body);
+  res.send("Updated!");
 });
