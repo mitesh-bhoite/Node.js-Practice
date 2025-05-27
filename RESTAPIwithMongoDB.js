@@ -13,4 +13,5 @@ app.put("/tasks/:id", async (req, res) => {
 });
 app.delete("/tasks/:id", async (req, res) => {
   await Task.findByIdAndDelete(req.params.id);
+  res.send("Deleted!");
 });
