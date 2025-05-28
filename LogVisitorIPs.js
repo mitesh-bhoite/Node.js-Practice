@@ -1,1 +1,1 @@
-//Log Visitor
+//Log Visitor IPs
