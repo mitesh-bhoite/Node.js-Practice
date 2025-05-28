@@ -7,3 +7,5 @@ app.use((req, res, next) => {
   fs.appendFileSync("visitors.log", `${new Date()} - ${ip}\n`);
   next();
 });
+
+app.get("/", (req, res) => res.send("Logged your IP!"));
