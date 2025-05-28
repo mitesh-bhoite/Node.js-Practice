@@ -2,4 +2,4 @@
 const express = require("express");
 const fs = require("fs");
 const app = express();
-app.use((req, res, next));
+app.use((req, res, next) => {});
