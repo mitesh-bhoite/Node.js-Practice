@@ -9,3 +9,4 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => res.send("Logged your IP!"));
+app.listen(3000);
