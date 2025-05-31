@@ -5,4 +5,4 @@ app.use(express.json());
 const messages = [];
 
 app.get("/chat", (req, res) => res.json(messages));
-app.post("/chat", (req, res));
+app.post("/chat", (req, res) => {});
