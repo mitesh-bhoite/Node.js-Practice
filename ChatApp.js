@@ -9,3 +9,4 @@ app.post("/chat", (req, res) => {
   messages.push({ user: req.body.user, message: req.body.message });
   res.send("Message received!");
 });
+app.listen(3000, () => console.log("Chat app running..."));
