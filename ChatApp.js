@@ -7,4 +7,5 @@ const messages = [];
 app.get("/chat", (req, res) => res.json(messages));
 app.post("/chat", (req, res) => {
   messages.push({ user: req.body.user, message: req.body.message });
+  res.send("Message received!");
 });
