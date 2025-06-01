@@ -2,3 +2,4 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const app = express();
+app.use(express.json());
