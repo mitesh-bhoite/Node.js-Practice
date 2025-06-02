@@ -13,5 +13,6 @@ app.post("/contact", async (req, res) => {
     from: email,
     to: "your_email",
     subject: `Contact Form - ${name}`,
+    text: message,
   });
 });
