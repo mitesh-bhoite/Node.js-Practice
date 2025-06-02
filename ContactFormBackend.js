@@ -12,5 +12,6 @@ app.post("/contact", async (req, res) => {
   await transporter.sendMail({
     from: email,
     to: "your_email",
+    subject: `Contact Form - ${name}`,
   });
 });
