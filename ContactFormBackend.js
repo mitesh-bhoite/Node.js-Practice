@@ -17,3 +17,4 @@ app.post("/contact", async (req, res) => {
   });
   res.send("Message sent!");
 });
+app.listen(3000);
