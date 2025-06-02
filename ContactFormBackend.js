@@ -15,4 +15,5 @@ app.post("/contact", async (req, res) => {
     subject: `Contact Form - ${name}`,
     text: message,
   });
+  res.send("Message sent!");
 });
