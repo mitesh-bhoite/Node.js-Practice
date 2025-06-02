@@ -9,4 +9,5 @@ app.post("/contact", async (req, res) => {
     service: "gmail",
     auth: { user: "your_email", pass: "your_password" },
   });
+  await transporter.sendMail({});
 });
