@@ -1,1 +1,1 @@
-//Terminal Weather App
+//Terminal Weather App (using API)
