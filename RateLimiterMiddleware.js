@@ -13,3 +13,4 @@ app.use((req, res, next) => {
   next();
 });
 app.get("/", (req, res) => res.send("Welcome!"));
+app.listen(3000);
