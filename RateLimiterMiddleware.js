@@ -12,3 +12,4 @@ app.use((req, res, next) => {
   requests[ip].push(Date.now());
   next();
 });
+app.get("/", (req, res) => res.send("Welcome!"));
