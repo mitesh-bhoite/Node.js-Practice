@@ -7,4 +7,6 @@ app.use((req, res, next) => {
   const ip = req.ip;
   requests[ip] = requests[ip] || [];
   requests[ip] = requests[ip].filter((t) => Date.now() - t < 60000);
+  if (requests[ip].length >= limit)
+    return res.status(429).send("Too many requests!");
 });
