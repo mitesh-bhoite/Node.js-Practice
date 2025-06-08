@@ -5,4 +5,5 @@ const requests = {};
 const limit = 5; // max requests per minute
 app.use((req, res, next) => {
   const ip = req.ip;
+  requests[ip] = requests[ip] || [];
 });
