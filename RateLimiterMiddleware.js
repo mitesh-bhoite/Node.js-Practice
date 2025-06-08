@@ -10,4 +10,5 @@ app.use((req, res, next) => {
   if (requests[ip].length >= limit)
     return res.status(429).send("Too many requests!");
   requests[ip].push(Date.now());
+  next();
 });
