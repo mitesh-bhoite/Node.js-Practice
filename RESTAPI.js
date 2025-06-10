@@ -4,5 +4,5 @@ const app = express();
 app.use(express.json());
 let products = [];
 app.get("/products", (req, res) => res.json(products));
-
+app.post("/products", (req, res));
 app.listen(3000, () => console.log("Product API running on 3000"));
